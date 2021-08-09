@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 
@@ -129,7 +128,7 @@ a {
         margin: 5vw;
         display: grid;
         grid-template: repeat(10, 1fr) / repeat(8, 1fr);
-        width: 100%;
+        width: 90%;
         height: 50vh;
     }
 
@@ -142,12 +141,12 @@ a {
     }
 
     #section-container h1 {
-        grid-area: 3 / 5 / span 2 / span 2;
-        font-size: 7vw;
+        grid-area: 2 / 5 / span 2 / span 2;
+        font-size: 6vw;
     }
     
     #section-container h2 {
-        grid-area: 8 / 5 / 5 / span 3;
+        grid-area: 0 / 5 / 8 / span 3;
         font-size: 3.5vw;
     }
 
