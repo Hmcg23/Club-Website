@@ -41,7 +41,7 @@ ul {
 }
 .main-title h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 6vw;
     padding: 20px;
 
 }
@@ -58,16 +58,17 @@ a {
 }
 
 #section-container {
+    margin: 5vw;
     display: grid;
     grid-template: repeat(10, 1fr) / repeat(10, 1fr);
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
 }
 
 #section-container img {
     grid-area: 1 / 2 / 6 / 8;
-    border-radius: 50%;
-    width: 100%;
+    border-radius: 80%;
+    width: 120%;
     animation: float 3s ease-in-out infinite;
     z-index: -1;
 }
@@ -104,5 +105,58 @@ a {
 .challenge h1 {
     width: 20%;
     color: aliceblue;
-    line-height: 50px;
+    line-height: 3vw;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    /* headers */
+
+    .main-title h2 {
+        font-size: 4vw;
+    
+    }
+
+    /* about */
+
+    .about {
+        flex-direction: column;
+    }
+
+    #section-container {
+        margin: 5vw;
+        display: grid;
+        grid-template: repeat(10, 1fr) / repeat(8, 1fr);
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #section-container img {
+        grid-area: 1 / 2 / 6 / 8;
+        border-radius: 80%;
+        width: 80%;
+        animation: float 3s ease-in-out infinite;
+        z-index: -1;
+    }
+
+    #section-container h1 {
+        grid-area: 3 / 5 / span 2 / span 2;
+        font-size: 7vw;
+    }
+    
+    #section-container h2 {
+        grid-area: 8 / 5 / 5 / span 3;
+        font-size: 3.5vw;
+    }
+
+    /* Weekly Challenge */
+
+    .challenge h1 {
+        padding-top: 1%;
+        width: 70%;
+        color: aliceblue;
+        font-size: 4vw;
+        line-height: 20px;
+    }
 }
