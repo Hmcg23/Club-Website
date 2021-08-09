@@ -87,3 +87,22 @@ a {
     grid-area: 4 / 5 / span 2 / span 5;
     font-size: 2vw;
 }
+
+/* Weekly Challenge */
+
+.challenge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.challenge img {
+    width: 20%;
+}
+
+.challenge h1 {
+    width: 20%;
+    color: aliceblue;
+    line-height: 50px;
+}
