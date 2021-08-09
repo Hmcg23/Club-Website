@@ -46,6 +46,10 @@ ul {
 
 }
 
+a {
+    color: brown;
+}
+
 /* About */
 
 .about {
@@ -64,14 +68,14 @@ ul {
     grid-area: 1 / 2 / 6 / 8;
     border-radius: 50%;
     width: 100%;
-    animation: float 6s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
     z-index: -1;
 }
 
 @keyframes float {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 30px); }
-    100%   { transform: translate(0, -0px); }   
+    0% { transform:rotate(-3deg); }
+    50%  { transform:rotate(3deg); }
+    100%   { transform:rotate(-3deg); }   
 }
 
 #section-container h1 {
