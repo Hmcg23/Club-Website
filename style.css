@@ -100,12 +100,14 @@ a {
 
 .challenge img {
     width: 20%;
+    animation: float 1s ease-in-out infinite;
 }
 
 .challenge h1 {
     width: 20%;
     color: aliceblue;
     line-height: 3vw;
+    margin: 5vw;
 }
 
 
@@ -159,4 +161,21 @@ a {
         font-size: 4vw;
         line-height: 20px;
     }
+}
+
+/* Photos section */
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photos img {
+    width: 40%;
+    height: auto;
+    padding: 1%;
+    border-radius: 5vw;
+    animation: floating 1s ease-in-out infinite;
+    transition: width 0.5s ease-in-out 0.5s;
 }
