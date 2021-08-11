@@ -177,8 +177,84 @@ a {
     height: auto;
     border-radius: 5vw;
     padding: 2%;
+    transition: max-width 0.3s ease-in-out;
 }
 
 #photo-three {
     grid-area: 1 / 1 / span 2 / span 2;
 }
+
+/* Footer */
+
+  .footer {
+    width: 100%;
+    background-color: brown;
+  }
+  
+  .footer .heading {
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+  }
+  
+  .footer .content p {
+    margin-bottom: 1.3rem;
+    color: rgba(0, 0, 0, 0.829);
+  }
+  
+  .footer .content a {
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.829);
+  }
+  
+  .footer .content a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.829);
+  }
+  
+  .footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+  }
+  
+  footer {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2%;
+  }
+  
+  footer hr {
+    margin: 2rem 0;
+  }
+  
+  @media (max-width: 767px) {
+    .footer .content {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+    }
+  
+    .footer {
+      position: unset;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .footer .content,
+    .footer {
+      font-size: 14px;
+    }
+  }
+  
+  @media (orientation: landscape) and (max-height: 500px) {
+    .footer {
+      position: unset;
+    }
+  }
