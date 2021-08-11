@@ -166,16 +166,19 @@ a {
 /* Photos section */
 
 .photos {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: center;
+    grid-template: repeat(10, 1fr), repeat(10, 1fr);
+    justify-items: center;
 }
 
 .photos img {
-    width: 50%;
+    max-width: 100%;
     height: auto;
-    padding: 1%;
     border-radius: 5vw;
-    animation: floating 1s ease-in-out infinite;
-    transition: width 0.5s ease-in-out 0.5s;
+    padding: 2%;
+}
+
+#photo-three {
+    grid-area: 1 / 1 / span 2 / span 2;
 }
