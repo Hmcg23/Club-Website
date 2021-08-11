@@ -206,7 +206,7 @@ a {
   }
   
   .footer .content p {
-    margin-bottom: 1.3rem;
+    margin-bottom: 0.5rem;
     color: rgba(0, 0, 0, 0.829);
   }
   
@@ -220,7 +220,7 @@ a {
   }
   
   .footer .content h4 {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1rem;
     font-size: 19px;
   }
   
